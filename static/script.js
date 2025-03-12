@@ -1,3 +1,4 @@
+
 let x = 5;
 let y = 7;
 let z = x + y;
@@ -39,6 +40,7 @@ function findTheBanana(element, index){
     }
 }
 
+console.log(window.location.pathname);
 if(window.location.pathname == "/Users/kurtschimmel/Desktop/WebDevLabs/67250_webdevlabs/kschimme-lab3/index.html"){
     greetingFunc();
 }
