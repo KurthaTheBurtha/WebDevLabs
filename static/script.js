@@ -40,8 +40,7 @@ function findTheBanana(element, index){
     }
 }
 
-console.log(window.location.pathname);
-if(window.location.pathname == "/Users/kurtschimmel/Desktop/WebDevLabs/67250_webdevlabs/kschimme-lab3/index.html"){
+if(window.location.pathname[-1] == "/" || window.location.pathname.substr(-10, 10) == "index.html"){
     greetingFunc();
 }
 
