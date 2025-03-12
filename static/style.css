@@ -2,7 +2,6 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     font-variant: normal;
@@ -21,7 +20,7 @@ a {
 }
 
 th {
-    padding: 12;
+    padding: 12px;
     background-color:aliceblue;
     color:blueviolet;
     width: fit-content;
@@ -33,7 +32,6 @@ tr:nth-child(even) {
 
 form * {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 100;
     font-style: normal;
     font-variant: normal;
