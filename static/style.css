@@ -47,7 +47,7 @@ form * {
     height:200px;
 }
 
-button {
+#submit{
     background-color: green;
     border: none;
     border-radius: 4px;
@@ -57,4 +57,16 @@ button {
 img {
     width: 30%;
     height: 30%;
+}
+
+#funlist {
+    display: none;
+}
+
+#longbio {
+    display: none;
+}
+
+#readless {
+    display: none;
 }

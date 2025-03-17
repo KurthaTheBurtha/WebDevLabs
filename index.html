@@ -8,8 +8,9 @@
     <title>Kurt Schimmel</title>
     <link rel="stylesheet" href="./static/style.css">
     <script src="./static/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Kurt Schimmel</h1>
         <nav>
@@ -19,11 +20,16 @@
             <a href="views/dontcontactme.html">Dont Contact Me</a>
         </nav>
     </header>
-    <div class="main">
+    <div class="main">  
         <h2 id="greeting">Hi, my name is Kurt</h2>
         <img src="static/kurt.jpg" alt="headshot">
-        <p>Hi, My name is Kurt Schimmel. I am a varsity athlete on the Track and Field Team at Carnegie Mellon University. I enjoy playing volleyball, hanging out with friends, and playing Brawl Stars.</p>
+        <p id="shortbio">Hi, My name is Kurt Schimmel</p>
+        <p id="longbio">Hi, My name is Kurt Schimmel. I am a varsity athlete on the Track and Field Team at Carnegie Mellon University. I enjoy playing volleyball, hanging out with friends, and playing Brawl Stars.</p>
+        <button id="readmore">Read More</button>
+        <button id="readless">Read Less</button>
     </div>
-    <footer>Copyright 2025 Kurt Schimmel</footer>
+    <footer>
+        <p id="copyYear">Copyright 2025 Kurt Schimmel</p>
+    </footer>
 </body>
 </html>

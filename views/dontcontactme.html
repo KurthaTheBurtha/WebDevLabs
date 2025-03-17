@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
 </head>
-<body style="font-family: Arial">
+<body style="font-family: Arial" onload="addYear()">
     <header>
         <h1 id="webname">Kurt Schimmel</h1>
         <nav>
@@ -24,13 +24,15 @@
         <p>Hi, My name is Kurt Schimmel. I am a varsity athlete on the Track and Field Team at Carnegie Mellon University. I enjoy playing volleyball, hanging out with friends, and playing Brawl Stars.</p>
         <form>
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input type="email" id="email" name="email" required><br>
             <label for="comment">Comment:</label><br>
-            <input type="text" id="comment" name="comment"><br>
-            <button type="submit">Submit</button>
+            <input type="text" id="comment" name="comment" required><br>
+            <button id="submit" type="submit" onclick="validate()">Submit</button>
+            <p id="validatemsg"></p>
         </form>
+
         <table>
             <tr>
                 <th>Contact Method</th>
@@ -47,6 +49,8 @@
         </table>
         <br>
     </div>
-    <footer>Copyright 2025 Kurt Schimmel</footer>
+    <footer>
+        <p id="copyYear">Copyright 2025 Kurt Schimmel</p>
+    </footer>
 </body>
 </html>

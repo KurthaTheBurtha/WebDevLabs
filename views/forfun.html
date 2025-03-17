@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../static/style.css">
     <script src="../static/script.js" defer></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">Kurt Schimmel</h1>
         <nav>
@@ -21,13 +21,16 @@
     </header>
     <div class="main">
         <h2>Things I like to do for fun</h2>
-        <ul>
+        <button id="hidebutton" onclick="showList()">Click to see...</button>
+        <ul id="funlist">
             <li>Volleyball</li>
             <li>Brawl Stars</li>
             <li>Rubix Cube</li>
             <li>friends</li>
         </ul>
     </div>
-    <footer>Copyright 2025 Kurt Schimmel</footer>
+    <footer>
+        <p id="copyYear">Copyright 2025 Kurt Schimmel</p>
+    </footer>
 </body>
 </html>
